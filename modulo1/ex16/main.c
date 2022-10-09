@@ -8,7 +8,8 @@ int main(){
 
     char * ptr = where_exists(word, sentence);
 
-    printf("\Endere;o na memoria: %p\n", &ptr);
+    printf("\n Endereco na memoria: %p\n", &ptr);
 
     return 0;
 }				// 1h10 mais ou menos, chato por causa das variaveis todas
+
