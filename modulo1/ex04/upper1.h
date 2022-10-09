@@ -1,1 +1,1 @@
-void upper1(char *str);
+void upper1(char *s);

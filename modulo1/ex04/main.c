@@ -5,9 +5,9 @@
 int main(int argc, char **argv)
 {
     
-    char stra[]="String to be transformed";
-    upper1(stra);
-    printf("String in uppercase: %s\n",stra);
+    char s[]="String to be transformed";
+    upper1(s);								//Calls method upper1
+    printf("String in uppercase: %s\n",s);
     
     return 0;
 }
