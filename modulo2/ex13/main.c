@@ -1,9 +1,16 @@
 #include <stdio.h>
 #include "asm.h"
 
-int lenght1=3, lenght2=5, height=2, aux=2;
+int length1, length2, height;
 
 int main(void) {
-	printf("%d\n",getArea());
+
+	printf("length1:");
+	scanf("%d",&length1);
+	printf("length2:");
+	scanf("%d",&length2);
+	printf("height:");
+	scanf("%d",&height);
+	printf("Area = %d\n", getArea());
 	return 0;
 }

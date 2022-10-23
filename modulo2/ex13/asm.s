@@ -2,18 +2,17 @@
 
 .section .data
 			 
-	.global lenght1
-	.global lenght2
+	.global length1
+	.global length2
 	.global height
-	.global aux
-	
+
 .section .text
 	.global getArea	
 	
 getArea:
 
-	movl lenght1(%rip), %r8d
-    movl lenght2(%rip), %eax
+	movl length1(%rip), %r8d
+    movl length2(%rip), %eax
     addl %r8d, %eax
     movl height(%rip), %ecx
     imull %ecx, %eax
