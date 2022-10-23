@@ -15,18 +15,22 @@ sum_and_subtract:
 	#movl - int para um coiso de 32 bits
 	#movsbl - 8 bits p 32 bits
 	#movswl - 16 p 32 bits
+	#movslq - 32 p 64 bits
 	
-	movsbl C(%rip),%eax			
-	movl A(%rip),%ecx			
-	addl %ecx,%eax				
+	movsbl C(%rip),%eax		
+	movslq %eax, %rax	
+	movl A(%rip),%ecx	
+	movslq %ecx, %rcx		
+	addq %rcx,%rax				
 	
 	movsbl D(%rip), %ecx
-	subl %ecx,%eax			
+	movslq %ecx, %rcx
+	subq %rcx,%rax			
 	
-	movswl B(%rip),%edx			
+	movswl B(%rip),%edx	
+	movslq %edx, %rdx		
 	
-	addl %edx,%eax				
+	addq %rdx,%rax				
 	
-	cdq
 	
 	ret
