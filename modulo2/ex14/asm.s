@@ -2,10 +2,13 @@
 
 .section .data
 
-	op3: 
+	length1: 
 		.int 0
 		
-	op4:
+	length2:
+		.int 0
+		
+	height:
 		.int 0
 			 
 	.global length1
