@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "asm.h"
 
-int length1, length2, height;
-
 int main(void) {
 
 	printf("length1:");
