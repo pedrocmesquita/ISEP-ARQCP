@@ -4,14 +4,11 @@ A:
 B:
 	.int 2
 	
-	.global A
-	.global B
-	.global n
-	.global i
+	.global A, B, n, i
 	
 .section .text
 
-.global sum			#int somatorio(void)
+.global sum	
 
 sum:
 	
