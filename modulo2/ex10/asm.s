@@ -1,15 +1,17 @@
 .section .data
 	.global op1
 	.global op2
+	.global op3
 
 .section .text
 	.global  sum3ints
 	
 sum3ints:
 
-	movl op1(%rip), %eax	
-	addl op2(%rip), %eax	
-	addl op3(%rip), %eax
-    cdq				
-  
+	movslq op1(%rip), %rax	
+	movslq op2(%rip), %rcx
+	addq %rcx,%rax
+	movslq op3(%rip), %rcx
+	addq %rcx, %rax
+			
 	ret
