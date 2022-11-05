@@ -1,11 +1,11 @@
 ex14: frequencies.o main.o
-	gcc frequencies.o main.o -o ex14
+	gcc -g -Wall frequencies.o main.o -o ex14
 	
-copy_vec.o: copy_vec.c
+frequencies.o: frequencies.c
 	gcc -g -Wall -c frequencies.c -o frequencies.o
 	
 main.o: main.c
-	gcc -g -Wall -c -main.c -o main.o
+	gcc -g -Wall -c main.c -o main.o
 	
 clean: 
 	rm -f *.o ex14
