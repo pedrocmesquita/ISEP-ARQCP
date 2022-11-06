@@ -8,4 +8,4 @@ main: main.o asm.o
 run: main
 	./main
 clean:
-	rm.o main
+	rm.o main 

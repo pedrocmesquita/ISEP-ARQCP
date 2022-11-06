@@ -2,7 +2,7 @@
 #include "asm.h"
 int i=1, n;
 
-int main(v){
+int main(){
 	printf("n:");
 	scanf("%d", &n);
 	printf("%d\n",sum());
