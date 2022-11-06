@@ -1,5 +1,5 @@
-#ifndef STR_COPY_PORTO_
-#define STR_COPY_PORTO_
+#ifndef ASM_H
+#define ASM_H
 
 void str_copy_porto(void);
 

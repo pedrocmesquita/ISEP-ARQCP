@@ -7,28 +7,25 @@
 	.global str_copy_porto
 	
 str_copy_porto:
-	movl $0, %edx
-	movl $0, %ecx
-	movl ptr1(%rip), %edx
-	movl ptr2(%rip), %ecx
+	movq ptr1(%rip), %rsi
+	movq ptr2(%rip), %rdi
 
 
 string_loop:
-	movb (%edx), %al
-	movb %al, (%ecx)
+	movb (%rsi), %al
+	movb %al, (%rdi)
 	cmp $0, %al
 	je end
-
 	cmp $111, %al
 	je troca
 
 inc:
-	incl %edx
-	incl %ecx
+	incq %rsi
+	incq %rdi
 	jmp string_loop
 
 troca:
-	movb $117, (%ecx)
+	movb $117, (%rdi)
 	jmp inc
 
 end:

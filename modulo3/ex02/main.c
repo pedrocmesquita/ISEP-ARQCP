@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "str_copy_porto.h"
+#include "asm.h"
 
 char vec[]="popo";
 	char vec2[]="";
