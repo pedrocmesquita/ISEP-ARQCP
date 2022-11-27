@@ -10,17 +10,17 @@ activate_bits:
 	movl %edx,%ebx				# ebx = edx
 	movl $0,%ecx				# i = 0
 		
-rightSide:
+right:
 	cmpl %ecx,%ebx				# end cicle or not
-	je continuation
+	je continue
 
 	shll %eax					# shift left
 	incl %eax					# eax++
 
 	incl %ecx					# i++
-	jmp rightSide
+	jmp right
 	
-continuation:
+continue:
 	orl %eax,%edi			 	# bits from right side stored in edi
 	movl $0,%eax 			 	
 	
@@ -28,7 +28,7 @@ continuation:
 	subl %esi,%ebx			 	
 	movl $0,%ecx			 	# i = 0
 	
-leftSide:
+left:
 	cmpl %ecx,%ebx				# check if cicle ends
 	je end
 	
@@ -36,7 +36,7 @@ leftSide:
 	rorl %eax					# rotation to right
 		
 	incl %ecx					# i++
-	jmp leftSide
+	jmp left
 		
 end:
 	orl %edi,%eax
