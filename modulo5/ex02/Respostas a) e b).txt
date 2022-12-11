@@ -1,0 +1,9 @@
+a)
+Uma união permite a uma variável, neste caso u, assumir diferentes tipos de dados.
+E quando cada um deles é impresso, está a ser impresso um dos valores que a variável u está a tomar.
+
+
+b)
+Neste exercício a estrutura u contém três tipos de dados. A cada um destes tipos está associado um bloco na memória.
+Por isso quando um valor é impresso, é impresso o valor guardado na parte da memória relativa a esse tipo de dados.
+
