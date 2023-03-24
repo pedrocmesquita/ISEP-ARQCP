@@ -1,3 +1,5 @@
+# Exercícios de ARQCP resolvidos - Edição 2022/23 
+
 # Leia atentamente este ficheiro antes de iniciar o seu trabalho nas aulas PL de ARQCP. #
 
 ## Regras para a utilizacao do repositorio: ##
